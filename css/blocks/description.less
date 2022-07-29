@@ -1,0 +1,42 @@
+// main: ../style.less
+
+.description {
+    text-align: center;
+    padding-bottom: 8rem;
+}
+
+.description__title {
+    font-weight: 400;
+    font-size: 2.12rem;
+    line-height: 4rem;
+    color: @black;
+    margin-bottom: 1rem;
+
+    &::after {
+        content: "";
+        display: block;
+        height: 1px;
+        background-color: #707070;
+        width: 180px;
+        margin: 0 auto 3rem;
+    }
+}
+
+.description__text {
+    margin: 0 auto;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 2.66rem;
+    color: @black;
+    max-width: 515px;
+
+    a {
+        color: #BB8B5D;
+        text-decoration: none;
+        font-weight: 400;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

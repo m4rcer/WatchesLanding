@@ -1,0 +1,47 @@
+// main: ../style.less
+
+.models__item {
+    margin-bottom: 6rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.models__item__preview {
+    margin: 0 auto;
+    width: 420px;
+    height: 630px;
+    background-color: @lightgray;
+    position: relative;
+    margin-bottom: 3rem;
+
+    &:hover .models__item__photo {
+        transform: translate(-50%, -50%) scale(1.1);
+    }
+}
+
+.models__item__photo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform .3s linear;
+}
+
+.models__item__title {
+    font-weight: 400;
+    font-size: 2.12rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+    color: @black;
+}
+
+.models__item__text {
+    margin: 0 auto;
+    color: @black;
+    line-height: 3.3rem;
+    font-size: 2.12rem;
+    max-width: 530px;
+    font-weight: 300;
+}
